@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('💥 Uᴘᴅᴀᴛᴇs', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', url='https://t.me/TeamEvamaria')
             ],
             [
                 InlineKeyboardButton('⚙️ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Gʀᴏᴜᴘ ', ), url='https://t.me/FZ_FILM_ZONE')
+            InlineKeyboardButton(' Gʀᴏᴜᴘ ', ), url='https://t.me/FZ_FILM_ZONE')
             InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', ),url='https://t.me/+VBr1rWkfkb04NzQ1')
             ],[
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
@@ -81,20 +81,20 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="<b>🗣️താഴെ  കാണുന്ന  ചാനലിൽ നിങ്ങൾ ഇല്ല അതുകൊണ്ട് നിങ്ങൾക്ക് സിനിമ കിട്ടില്ല... സിനിമ കിട്ടാനായി താഴെ കാണുന്ന JOIN MY MAIN CHANNELഎന്ന ബട്ടനിൽ ക്ലിക്ക് ചെയ്തു ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക എങ്കിൽ മാത്രമേ നിങ്ങൾക്ക് മൂവി ഈ ബോട്ട് വഴി ലഭിക്കുകയുള്ളു.\nഅതു കഴ്ഞ്ഞു താഴെ  കാണുന്ന 👉Try again👈 എന്നുള്ളതിൽ ക്ലിക്ക് ചെയ്തു Start കൊടുത്താൽ നിങ്ങൾക്ക് മൂവി കിട്ടുന്നതാണ്...😁😁</b>",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('💥 Gʀᴏᴜᴘ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='https://t.me/TeamEvamaria')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -127,7 +127,7 @@ async def start(client, message):
         for msg in msgs:
             title = msg.get("title")
             size=get_size(int(msg.get("size", 0)))
-            f_caption=msg.get("<b>🔰👉 കൂടുതൽ സിനിമകൾക്കും മറ്റു വിവരങ്ങൾക്കുമായി ഞങ്ങളുടെ ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്യൂ\n🌟༺ ──•◈•─ ─•◈•──༻🌟\n@MF_UPDATES\n@FZ_FILM_ZONE", "")
+            f_caption=msg.get("<b>🔰👉 കൂടുതൽ സിനിമകൾക്കും മറ്റു വിവരങ്ങൾക്കുമായി ഞങ്ങളുടെ ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്യൂ\n🌟༺ ──•◈•─ ─•◈•──༻🌟\n@MF_UPDATES\n@FZ_FILM_ZONE</b>", "")
             if BATCH_FILE_CAPTION:
                 try:
                     f_caption=BATCH_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
