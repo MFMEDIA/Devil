@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', ),url='https://t.me/+VBr1rWkfkb04NzQ1')
             ],[
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('⚠️ Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -94,7 +94,7 @@ async def start(client, message):
             InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='https://t.me/TeamEvamaria')
             ],[
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('⚠️ Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
