@@ -220,7 +220,7 @@ async def start(client, message):
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
                 try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
+                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='<b>🔰👉 കൂടുതൽ സിനിമകൾക്കും മറ്റു വിവരങ്ങൾക്കുമായി ഞങ്ങളുടെ ഗ്രൂപ്പിൽ ജോയിൻ ചെയ്യൂ\n\n🌟༺ ──•◈•─ ─•◈•──༻🌟\n➧ @MF_UPDATES\n➧ @FZ_FILM_ZONE</b>')
                 except:
                     return
             await msg.edit_caption(f_caption)
