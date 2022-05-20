@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('✨ Uᴘᴅᴀᴛᴇs', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('✨ Uᴘᴅᴀᴛᴇs', url='https://t.me/+VBr1rWkfkb04NzQ1'),
             InlineKeyboardButton('🔐 Sᴏᴜʀᴄᴇ', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
@@ -504,7 +504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('👮‍♂️ Admin', callback_data='admin')
+            InlineKeyboardButton('🛠️ Aᴅᴍɪɴ, callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
