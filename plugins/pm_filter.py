@@ -406,7 +406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/FZ_FILM_ZONE'),
+            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/+Ll7qPltk8KpjNzRl'),
             InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', url='https://t.me/MF_UPDATES')
         ], [
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
@@ -735,7 +735,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("<b>📣 I couldn't find anything related to that Did you mean any one of these?</b>\n\n<b>📣 നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
