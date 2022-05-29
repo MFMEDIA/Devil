@@ -406,7 +406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/+Ll7qPltk8KpjNzRl'),
+            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/+L3dprEuzcm5jMDdl'),
             InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', url='https://t.me/MF_UPDATES')
         ], [
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
@@ -425,7 +425,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter')
         ], [
             InlineKeyboardButton('🔧 Cᴏɴɴᴇᴄᴛɪᴏɴs', callback_data='coct'),
-            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
+            InlineKeyboardButton('🎛 Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
         ], [
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('✨ Sᴛᴀᴛs', callback_data='stats')
