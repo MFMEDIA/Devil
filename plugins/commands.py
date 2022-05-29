@@ -81,7 +81,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="♦️ READ THIS INSTRUCTION ♦️\n\n🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈/n👇 JOIN THIS CHANNEL & TRY AGAIN 👇",
+            text="Hᴇʟʟᴏ {}\n♦️ READ THIS INSTRUCTION ♦️\n\n🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈/n👇 JOIN THIS CHANNEL & TRY AGAIN 👇",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
