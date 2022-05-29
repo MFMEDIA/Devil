@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton(' Gʀᴏᴜᴘ ', url='https://t.me/FZ_FILM_ZONE'),
+            InlineKeyboardButton(' Gʀᴏᴜᴘ ', url='https://t.me/+L3dprEuzcm5jMDdl'),
             InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', url='https://t.me/MF_UPDATES')
             ],[
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
@@ -81,7 +81,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="🗣️താഴെ  കാണുന്ന  ചാനലിൽ നിങ്ങൾ ഇല്ല അതുകൊണ്ട് നിങ്ങൾക്ക് സിനിമ കിട്ടില്ല... സിനിമ കിട്ടാനായി താഴെ കാണുന്ന JOIN MY MAIN CHANNELഎന്ന ബട്ടനിൽ ക്ലിക്ക് ചെയ്തു ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക എങ്കിൽ മാത്രമേ നിങ്ങൾക്ക് മൂവി ഈ ബോട്ട് വഴി ലഭിക്കുകയുള്ളു.\n\nഅതു കഴ്ഞ്ഞു താഴെ  കാണുന്ന 👉Try again👈 എന്നുള്ളതിൽ ക്ലിക്ക് ചെയ്തു Start കൊടുത്താൽ നിങ്ങൾക്ക് മൂവി കിട്ടുന്നതാണ്...😁😁",
+            text="<b>♦️ READ THIS INSTRUCTION ♦️</b>\n\n🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈/n<b>👇 JOIN THIS CHANNEL & TRY AGAIN 👇</b>",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -90,7 +90,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/FZ_FILM_ZONE'),
+            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/+L3dprEuzcm5jMDdl'),
             InlineKeyboardButton('💥 Cʜᴀɴɴᴇʟ', url='https://t.me/MF_UPDATES')
             ],[
             InlineKeyboardButton('⚙️ Hᴇʟᴘ', callback_data='help'),
